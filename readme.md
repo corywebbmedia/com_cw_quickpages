@@ -1,5 +1,19 @@
 # CW Quick Pages Component for Joomla
 
+CW Quick Pages is the quickest way to add a content page in Joomla!. Simply create a CW Quick Pages menu item; add your page content directly in the menu item, and Save. That's all there is to it!
+
+This component comes with 3 different page types: page, contact, and event. Each page type is defined and stored as Joomla menu items, so your page and menu data are finally stored in one place. No more opening com_content, creating an uncategoriezed article and then creating a single article menu item just to create a simple content opage. With CW Quick Pages, you cut out the com_content middle man and create pages simply by creating menu items.
+
+* Standard Joomla MVC structure
+* All data stored as menu item parameters so no extra data to manage
+* Create a page by simply creating a menu item
+* Cut out the com_content middle man
+* 3 page types included: Page, Contact, and Event
+* CCK for developers: easily create your own custom page types with standard Joomla template overrides (requires knowledge of menu item manifest XML files)
+* GPL License
+
+_Note: CW Quick Pages does not have a search plugin yet, so the content created with this component is not currently searchable._
+
 ## Documentation
 
 ### Basic Instructions
