@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="COM_CW_QUICKPAGES_TITLE_VIEW_PAGE" option="Page">
+        <message>
+                        <![CDATA[COM_CW_QUICKPAGES_TITLE_VIEW_PAGE_DESC]]>
+        </message>
+	</layout>
+
+    <fields name="params">
+        <fieldset name="basic"
+            label="COM_CW_QUICKPAGES_SETTINGS_LABEL">
+
+            <field name="layout" type="componentlayout" extension="com_cw_quickpages" view="page" useglobal="true"
+                label="COM_CW_QUICKPAGES_FIELD_LAYOUT_LABEL"
+                description="COM_CW_QUICKPAGES_FIELD_LAYOUT_DESC" />
+
+            <field name="content_title" type="text" default=""
+                label="COM_CW_QUICKPAGES_FIELD_CONTENT_TITLE_LABEL"
+                description="COM_CW_QUICKPAGES_FIELD_CONTENT_TITLE_DESC" />
+
+            <field name="content" type="editor"
+                buttons="true"
+                description="COM_CW_QUICKPAGES_FIELD_CONTENT_DESC"
+                filter="JComponentHelper::filterText"
+                label="COM_CW_QUICKPAGES_FIELD_CONTENT_LABEL"
+                hide="readmore,pagebreak"
+            />
+
+        </fieldset>
+    </fields>
+</metadata>

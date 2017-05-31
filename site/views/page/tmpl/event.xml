@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="COM_CW_QUICKPAGES_TITLE_VIEW_EVENT" option="Event">
+        <message>
+                        <![CDATA[COM_CW_QUICKPAGES_TITLE_VIEW_EVENT_DESC]]>
+        </message>
+	</layout>
+
+    <fields name="params">
+        <fieldset name="basic"
+            label="COM_CW_QUICKPAGES_SETTINGS_LABEL">
+
+            <field name="layout" type="componentlayout" extension="com_cw_quickpages" view="page" useglobal="true"
+                label="COM_CW_QUICKPAGES_FIELD_LAYOUT_LABEL"
+                description="COM_CW_QUICKPAGES_FIELD_LAYOUT_DESC" />
+
+            <field name="content_title" type="text" default=""
+                label="COM_CW_QUICKPAGES_FIELD_CONTENT_TITLE_LABEL"
+                description="COM_CW_QUICKPAGES_FIELD_CONTENT_TITLE_DESC" />
+
+            <field name="content" type="editor"
+                buttons="true"
+                description="COM_CW_QUICKPAGES_FIELD_CONTENT_DESC"
+                filter="JComponentHelper::filterText"
+                label="COM_CW_QUICKPAGES_FIELD_CONTENT_LABEL"
+                hide="readmore,pagebreak"
+            />
+
+        </fieldset>
+        <fieldset name="pages_event"
+            label="COM_CW_QUICKPAGES_EVENT_SETTINGS_LABEL">
+
+            <field name="event_datetime" type="calendar"
+                label="COM_CW_QUICKPAGES_FIELD_EVENT_DATETIME_LABEL"
+                description="COM_CW_QUICKPAGES_FIELD_EVENT_DATETIME_DESC"
+                format="%Y-%m-%d %H:%M:%S" size="22"
+                filter="user_utc" />
+
+            <field name="event_image"
+                type="media"
+                hide_none="1"
+                label="COM_CW_QUICKPAGES_FIELD_EVENT_IMAGE_LABEL"
+                description="COM_CW_QUICKPAGES_FIELD_EVENT_IMAGE_DESC" />
+
+            <field name="event_name" type="text" default=""
+                label="COM_CW_QUICKPAGES_FIELD_EVENT_NAME_LABEL"
+                description="COM_CW_QUICKPAGES_FIELD_EVENT_NAME_DESC" />
+
+            <field name="event_email" type="email" default=""
+                label="COM_CW_QUICKPAGES_FIELD_EVENT_EMAIL_LABEL"
+                description="COM_CW_QUICKPAGES_FIELD_EVENT_EMAIL_DESC" />
+
+            <field name="event_address" type="textarea" default=""
+                label="COM_CW_QUICKPAGES_FIELD_EVENT_ADDRESS_LABEL"
+                description="COM_CW_QUICKPAGES_FIELD_EVENT_ADDRESS_DESC" />
+
+            <field name="event_city" type="text" default=""
+                label="COM_CW_QUICKPAGES_FIELD_EVENT_CITY_LABEL"
+                description="COM_CW_QUICKPAGES_FIELD_EVENT_CITY_DESC" />
+
+            <field name="event_state" type="text" default=""
+                label="COM_CW_QUICKPAGES_FIELD_EVENT_STATE_LABEL"
+                description="COM_CW_QUICKPAGES_FIELD_EVENT_STATE_DESC" />
+
+            <field name="event_zip" type="text" default=""
+                label="COM_CW_QUICKPAGES_FIELD_EVENT_ZIP_LABEL"
+                description="COM_CW_QUICKPAGES_FIELD_EVENT_ZIP_DESC" />
+
+            <field name="event_country" type="text" default=""
+                label="COM_CW_QUICKPAGES_FIELD_EVENT_COUNTRY_LABEL"
+                description="COM_CW_QUICKPAGES_FIELD_EVENT_COUNTRY_DESC" />
+
+            <field name="event_phone" type="text" default=""
+                label="COM_CW_QUICKPAGES_FIELD_EVENT_PHONE_LABEL"
+                description="COM_CW_QUICKPAGES_FIELD_EVENT_PHONE_DESC" />
+
+            <field name="event_mobile" type="text" default=""
+                label="COM_CW_QUICKPAGES_FIELD_EVENT_MOBILE_LABEL"
+                description="COM_CW_QUICKPAGES_FIELD_EVENT_MOBILE_DESC" />
+
+            <field name="event_fax" type="text" default=""
+                label="COM_CW_QUICKPAGES_FIELD_EVENT_FAX_LABEL"
+                description="COM_CW_QUICKPAGES_FIELD_EVENT_FAX_DESC" />
+
+            <field name="event_website" type="text" default=""
+                label="COM_CW_QUICKPAGES_FIELD_EVENT_WEBSITE_LABEL"
+                description="COM_CW_QUICKPAGES_FIELD_EVENT_WEBSITE_DESC" />
+
+            <field name="event_map" type="radio"
+                class="btn-group btn-group-yesno"
+                label="COM_CW_QUICKPAGES_FIELD_EVENT_MAP_LABEL"
+                description="COM_CW_QUICKPAGES_FIELD_EVENT_MAP__DESC"
+                default="1" filter="integer"
+            >
+                <option value="1">JYES</option>
+                <option value="0">JNO</option>
+            </field>
+
+            <field name="event_latitude" type="text" default=""
+                label="COM_CW_QUICKPAGES_FIELD_EVENT_LATITUDE_LABEL"
+                description="COM_CW_QUICKPAGES_FIELD_EVENT_LATITUDE_DESC" />
+
+            <field name="event_longitude" type="text" default=""
+                label="COM_CW_QUICKPAGES_FIELD_EVENT_LONGITUDE_LABEL"
+                description="COM_CW_QUICKPAGES_FIELD_EVENT_LONGITUDE_DESC" />
+
+        </fieldset>
+    </fields>
+</metadata>

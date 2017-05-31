@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="COM_CW_QUICKPAGES_TITLE_VIEW_CONTACT" option="Contact Info">
+        <message>
+                        <![CDATA[COM_CW_QUICKPAGES_TITLE_VIEW_CONTACT_DESC]]>
+        </message>
+	</layout>
+
+    <fields name="params">
+        <fieldset name="basic"
+            label="COM_CW_QUICKPAGES_SETTINGS_LABEL">
+
+            <field name="layout" type="componentlayout" extension="com_cw_quickpages" view="page" useglobal="true"
+                label="COM_CW_QUICKPAGES_FIELD_LAYOUT_LABEL"
+                description="COM_CW_QUICKPAGES_FIELD_LAYOUT_DESC" />
+
+            <field name="content_title" type="text" default=""
+                label="COM_CW_QUICKPAGES_FIELD_CONTENT_TITLE_LABEL"
+                description="COM_CW_QUICKPAGES_FIELD_CONTENT_TITLE_DESC" />
+
+            <field name="content" type="editor"
+                buttons="true"
+                description="COM_CW_QUICKPAGES_FIELD_CONTENT_DESC"
+                filter="JComponentHelper::filterText"
+                label="COM_CW_QUICKPAGES_FIELD_CONTENT_LABEL"
+                hide="readmore,pagebreak"
+            />
+
+        </fieldset>
+        <fieldset name="pages_contact"
+            label="COM_CW_QUICKPAGES_CONTACT_SETTINGS_LABEL">
+
+            <field name="contact_image"
+                type="media"
+                hide_none="1"
+                label="COM_CW_QUICKPAGES_FIELD_CONTACT_IMAGE_LABEL"
+                description="COM_CW_QUICKPAGES_FIELD_CONTACT_IMAGE_DESC" />
+
+            <field name="contact_name" type="text" default=""
+                label="COM_CW_QUICKPAGES_FIELD_CONTACT_NAME_LABEL"
+                description="COM_CW_QUICKPAGES_FIELD_CONTACT_NAME_DESC" />
+
+            <field name="contact_email" type="email" default=""
+                label="COM_CW_QUICKPAGES_FIELD_CONTACT_EMAIL_LABEL"
+                description="COM_CW_QUICKPAGES_FIELD_CONTACT_EMAIL_DESC" />
+
+            <field name="contact_address" type="textarea" default=""
+                label="COM_CW_QUICKPAGES_FIELD_CONTACT_ADDRESS_LABEL"
+                description="COM_CW_QUICKPAGES_FIELD_CONTACT_ADDRESS_DESC" />
+
+            <field name="contact_city" type="text" default=""
+                label="COM_CW_QUICKPAGES_FIELD_CONTACT_CITY_LABEL"
+                description="COM_CW_QUICKPAGES_FIELD_CONTACT_CITY_DESC" />
+
+            <field name="contact_state" type="text" default=""
+                label="COM_CW_QUICKPAGES_FIELD_CONTACT_STATE_LABEL"
+                description="COM_CW_QUICKPAGES_FIELD_CONTACT_STATE_DESC" />
+
+            <field name="contact_zip" type="text" default=""
+                label="COM_CW_QUICKPAGES_FIELD_CONTACT_ZIP_LABEL"
+                description="COM_CW_QUICKPAGES_FIELD_CONTACT_ZIP_DESC" />
+
+            <field name="contact_country" type="text" default=""
+                label="COM_CW_QUICKPAGES_FIELD_CONTACT_COUNTRY_LABEL"
+                description="COM_CW_QUICKPAGES_FIELD_CONTACT_COUNTRY_DESC" />
+
+            <field name="contact_phone" type="text" default=""
+                label="COM_CW_QUICKPAGES_FIELD_CONTACT_PHONE_LABEL"
+                description="COM_CW_QUICKPAGES_FIELD_CONTACT_PHONE_DESC" />
+
+            <field name="contact_mobile" type="text" default=""
+                label="COM_CW_QUICKPAGES_FIELD_CONTACT_MOBILE_LABEL"
+                description="COM_CW_QUICKPAGES_FIELD_CONTACT_MOBILE_DESC" />
+
+            <field name="contact_fax" type="text" default=""
+                label="COM_CW_QUICKPAGES_FIELD_CONTACT_FAX_LABEL"
+                description="COM_CW_QUICKPAGES_FIELD_CONTACT_FAX_DESC" />
+
+            <field name="contact_website" type="text" default=""
+                label="COM_CW_QUICKPAGES_FIELD_CONTACT_WEBSITE_LABEL"
+                description="COM_CW_QUICKPAGES_FIELD_CONTACT_WEBSITE_DESC" />
+
+            <field name="contact_map" type="radio"
+                class="btn-group btn-group-yesno"
+                label="COM_CW_QUICKPAGES_FIELD_CONTACT_MAP_LABEL"
+                description="COM_CW_QUICKPAGES_FIELD_CONTACT_MAP__DESC"
+                default="1" filter="integer"
+            >
+                <option value="1">JYES</option>
+                <option value="0">JNO</option>
+            </field>
+
+            <field name="contact_latitude" type="text" default=""
+                label="COM_CW_QUICKPAGES_FIELD_CONTACT_LATITUDE_LABEL"
+                description="COM_CW_QUICKPAGES_FIELD_CONTACT_LATITUDE_DESC" />
+
+            <field name="contact_longitude" type="text" default=""
+                label="COM_CW_QUICKPAGES_FIELD_CONTACT_LONGITUDE_LABEL"
+                description="COM_CW_QUICKPAGES_FIELD_CONTACT_LONGITUDE_DESC" />
+
+        </fieldset>
+    </fields>
+</metadata>
