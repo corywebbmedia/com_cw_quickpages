@@ -6,8 +6,8 @@
     <license>GNU General Public License version 2 or later; see LICENSE.txt</license>
     <author>Cory Webb</author>
     <authorEmail>joomla@corywebbmedia.com</authorEmail>
-    <authorUrl>http://corywebbmedia.com/joomla-extensions</authorUrl>
-    <version>1.0.2</version>
+    <authorUrl>https://cwextensions.com</authorUrl>
+    <version>1.0.3</version>
     <description>COM_CW_QUICKPAGES_XML_DESCRIPTION</description>
 
     <files folder="site">
@@ -41,7 +41,7 @@
     <scriptfile>script.cw_quickpages.php</scriptfile>
 
     <updateservers>
-        <server type="extension" name="CW Quick Pages Updates"><![CDATA[https://corywebbmedia.com/cw-quick-pages-update-stream/?view=update&dummy=extension.xml]]></server>
+        <server type="extension" name="CW Quick Pages Updates"><![CDATA[https://cwextensions.com/cw-quick-pages-update-stream/?view=update&dummy=extension.xml]]></server>
     </updateservers>
     
 </extension>
